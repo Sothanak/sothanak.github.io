@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator </title>
+	<style type="text/css">
+body
+{
+	background:#ff;
+}
+
+.m
+{
+	border: 5px  30% solid red;
+	margin-left:500px;
+	margin-top: 100px;
+	width: 400px;
+	padding:5px;
+	transition: 0.5s linear;
+}
+.m:hover
+{
+	box-shadow: 0px 1px 10px #FFAB35;
+
+} 
+.m h1
+{
+	text-shadow: 0px 1px 10px #FFAB35;
+	color: #fff;
+	font-size: 40px;
+}
+
+div
+{	
+	text-align: center;
+}
+button
+{ 
+	background-color: #FFAB35;
+	font-size: 200%;
+	border-radius: 8px;
+	margin-top: 5px;
+	width: 120px;
+/*	border: 30px 20% solid black; */
+	padding: 15px;
+	border:0;
+	transition: 0.5s linear;
+	color:#fff;
+}
+button:hover
+{
+	background-color: blue;
+	transform:  scale(1.1);
+}
+input
+{
+	height: 80px;
+	width: 370px;
+	font-size: 30px;
+	text-align: right;
+	border:0;
+	color:#fff;
+	background: none;
+}
+#result{
+	border:1px solid #FFAB35;
+}
+	</style>
+
+	<script type="text/javascript">
+		function a()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+1;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+		}
+		function b()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+2;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+		}
+		function c()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+3;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function d()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+4;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function e()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+5;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function f()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+6;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function g()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+7;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function h()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+8;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function i()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+9;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+
+		}
+		function j()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+0;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+
+		}
+		function k()
+		{
+			var result=document.getElementById("result");
+			result.value= result.value.substring(0,result.value.length - 1);
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+		}
+		function l()
+		{
+			var result=document.getElementById("result");
+			result.value="";
+			document.getElementById("point").disabled = false;
+			document.getElementById("add").disabled = false;
+			document.getElementById("sub").disabled = false;
+			document.getElementById("mul").disabled = false;
+			document.getElementById("div").disabled = false;
+
+		}
+		function point()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+(".");
+
+			document.getElementById("point").disabled = true;
+
+		}
+		function add()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+("+");
+		    document.getElementById("point").disabled = false;
+		    document.getElementById("add").disabled = true;
+		    document.getElementById("sub").disabled = true;
+		    document.getElementById("mul").disabled = true;
+		    document.getElementById("div").disabled = true;
+
+
+
+
+		}
+		function sub()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+("-");
+			document.getElementById("point").disabled = false;
+			document.getElementById("sub").disabled = true;
+			document.getElementById("add").disabled = true;
+			document.getElementById("mul").disabled = true;
+			document.getElementById("div").disabled = true;
+
+
+
+
+		}
+		function mul()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+("*");
+			document.getElementById("point").disabled = false;
+			document.getElementById("mul").disabled = true;
+			document.getElementById("add").disabled = true;
+			document.getElementById("sub").disabled = true;
+			document.getElementById("div").disabled = true;
+
+
+
+
+
+
+		}
+		function div()
+		{
+			var result=document.getElementById("result");
+			result.value=result.value+("/");
+			document.getElementById("point").disabled = false;
+			document.getElementById("div").disabled = true;
+			document.getElementById("add").disabled = true;
+			document.getElementById("sub").disabled = true;
+			document.getElementById("mul").disabled = true;
+
+
+
+
+
+		}
+		function eq()
+		{
+			var result=document.getElementById("result");
+			result.value= eval(result.value);
+			document.getElementById("point").disabled = true;
+
+		}
+
+
+
+
+	</script>
+</head>
+<body>
+
+  <div class="m">
+  	<h1>MY CALCULATOR</h1>
+   <input id="result" >
+<div>
+	<div>
+		<button onclick="l()">AC</button>
+		<button onclick="k()">Del</button>
+		<button onclick="j()">0</button>
+		
+	</div>
+	<div>
+		<button onclick="a()">1</button>
+		<button onclick="b()">2</button>
+		<button onclick="c()">3</button>
+	<div>
+		<button onclick="d()">4</button>
+		<button onclick="e()">5</button>
+		<button onclick="f()" >6</button>
+	</div>
+	<div>
+		<button onclick="g()">7</button>
+		<button onclick="h()">8</button>
+		<button onclick="i()">9</button>
+	</div>
+		<button onclick="add()" 	id="add">	+	</button>
+		<button onclick="sub()" 	id="sub">	-	</button>
+		<button onclick="mul()" 	id="mul">	*	</button>
+		<button onclick="div()" 	id="div">	/	</button>
+		<button onclick="point()"	id="point">	.</button>
+		<button onclick="eq()">=</button>				
+  </div>
+</body>
+</html>
